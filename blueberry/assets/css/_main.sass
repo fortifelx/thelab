@@ -1,0 +1,61 @@
+.main
+  width: 100%
+  height: 100vh
+  position: relative
+  &_illustration
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 100vh
+    position: relative
+    &_first
+      position: absolute
+      height: 110%
+      top: -10%
+      right: 0
+      width: 60vw
+    &_second
+      display: block
+      margin: 0 auto
+      width: 70%
+      position: relative
+      z-index: 2
+      left: -15%
+  &_text
+    width: 100%
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    padding: 10vh 0
+    &_header
+      width: 99%
+      font-family: Proba
+      font-size: 74px
+      color: rgba(0, 155, 209, 1)
+      font-weight: 200
+    &_btn
+      height: 70px
+      line-height: 65px
+      text-align: center
+      background-color: rgba(0, 180, 221, 1)
+      border-radius: 10px
+      box-shadow: 0px 10px 15px rgba(0, 180, 221, 0.51)
+      width: calc(50% - 15px)
+      font-size: 32px
+      color: white
+      font-family: Proba
+      font-weight: 200
+  &_ilu
+    position: absolute
+    width: 30%
+    right: -5%
+    top: 75vh
+    height: auto
+    text-align: center
+    img
+      width: 100%
+      display: inline-block
+      height: auto

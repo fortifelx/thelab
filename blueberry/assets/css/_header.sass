@@ -1,0 +1,75 @@
+.nav
+  $height: 80px
+  $screen: 1680px
+  position: fixed
+  width: 100%
+  height: $height
+  line-height: $height
+  top: 30px
+  left: 0
+  z-index: 100
+  nav
+    display: block
+    width: 100%
+    height: $height
+  &_logo
+    display: block
+    width: 100%
+    height: $height
+    img
+      height: 100%
+  &_menu
+    width: 100%
+    height: $height
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    &_link
+      font-family: Proba
+      font-size: 28px
+      font-weight: 600
+      display: inline-block
+      width: auto
+      color: #1D252D
+      mix-blend-mode: difference
+      @media screen and (max-width: $screen)
+        font-size: 18px
+  &_lang
+    position: relative
+    width: 100%
+    right: 0
+    padding:  0 10px
+    height: $height
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    border-radius: 20px 0 0 20px
+    background-color: #009BD1
+    box-shadow: 0px 10px 20px rgba(0, 155, 209, 0.44)
+    color: white
+    font-size: 20px
+    font-family: Proba
+    font-weight: 200
+    @media screen and (max-width: $screen)
+      width: 150%
+    &:after
+      content: ''
+      width: 50vw
+      position: absolute
+      height: 100%
+      left: 100%
+      background-color: #009BD1
+      box-shadow: 0px 10px 20px rgba(0, 155, 209, 0.44)
+    &_link
+      color: white
+      font-size: 20px
+      font-family: Proba
+      font-weight: 200
+      @media screen and (max-width: $screen)
+        font-size: 16px
+      &_active
+        font-size: 28px
+        @media screen and (max-width: $screen)
+          font-size: 24px
