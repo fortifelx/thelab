@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Proba";
+  src: url("../fonts/Proba Pro Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Proba";
+  src: url("../fonts/Proba Pro Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Proba";
+  src: url("../fonts/Proba Pro Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: "Proba";
+  src: url("../fonts/Proba Pro Bold Italic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic; }
+
+/*# sourceMappingURL=style.css.map */
