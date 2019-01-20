@@ -1,0 +1,100 @@
+.seasons
+  width: 100%
+  height: 100%
+  display: block
+  position: relative
+  padding-bottom: 30vh
+  padding-top: 200px
+  background-image: url("../img/seasons_blueberry.svg") ,url("../img/seasons_background.svg")
+  background-repeat: no-repeat
+  background-size: 43vw, 122vw
+  background-position: 70vw 0, -6vw 100px
+  &_header
+    color: rgba(0, 180, 221, 1)
+    display: block
+    text-align: center
+    font-family: Proba
+    font-size: 80px
+    font-weight: 200
+  &_wrapper
+    width: 100%
+    display: block
+    overflow: hidden
+  &_weeks
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding-top: 55vh
+    li
+      position: relative
+      color: #575757
+      font-size: 24px
+      font-family: Proba
+      font-weight: 200
+      display: inline-block
+      flex: 1 3 auto
+      &:nth-child(1)
+        .seasons_line
+          width: calc(415% - 9px)
+          top: -48vh
+      &:nth-child(2)
+        .seasons_line
+          width: calc(515% - 6px)
+          top: -36vh
+      &:nth-child(3)
+        .seasons_line
+          width: calc(500% + 13px)
+          top: -24vh
+      &:nth-child(8)
+        .seasons_line
+          width: calc(515% + 12px)
+          top: -12vh
+          left: calc(55% - 7px)
+  &_line
+    position: absolute
+    color: rgba(0, 180, 221, 1)
+    font-size: 18px
+    font-weight: 600
+    left: calc(55% - 10px)
+    p
+      position: relative
+      display: inline-block
+      margin-left: 5px
+      line-height: 24px
+      width: auto
+      font-size: 18px
+      text-shadow: 0px 23px 15px rgba(0, 180, 221, 1)
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: 52px
+        width: 2px
+        height: 50vh
+        background-color: rgba(129, 232, 255, 1)
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      height: 10px
+      width: 100%
+      bottom: -28px
+      border-radius: 10px
+      background-color: #00B4DD
+      box-shadow: 0 7vh 15px rgba(0, 0, 0, 0.16)
+      z-index: 1
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      right: 5px
+      top: 52px
+      width: 2px
+      height: 50vh
+      background-color: rgba(129, 232, 255, 1)
+  //&_lines
+  //  display: block
+  //  height: 50vh
+  //  position: relative
+  //  width: 100%
