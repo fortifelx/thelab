@@ -1,3 +1,4 @@
+$screen: 1680px
 @import "font"
 @import "header"
 @import "main"
@@ -11,7 +12,7 @@
 a
   text-decoration: none
 .container
-  @media screen and (min-width: 1680px)
+  @media screen and (min-width: $screen)
     max-width: 90vw
 .main_wrapper
   background-image: url("../img/main_background.svg"),  url("../img/main_ilu.png"), linear-gradient(to bottom, #009BD1 50vw, rgba(255,255,255,0) 0%), url("../img/second-background.svg")
@@ -20,7 +21,16 @@ a
   background-repeat: no-repeat
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07)
   padding-bottom: 150px
+  @media screen and (max-width: $screen )
+    background-image: url("../img/main_background.svg"),  url("../img/main_ilu.png"), linear-gradient(to bottom, #009BD1 50vw, rgba(255,255,255,0) 0%), url("../img/second-background.svg")
+    background-size: 122vw, 13vw, 50vw, 116vw
+    background-position: -6vw -35vw, 78vw 32vw, 50vw 15vw, -6vw -30vh
+    background-repeat: no-repeat
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07)
+    padding-bottom: 150px
 .margin-bottom
   margin-bottom: 50px
 .margin-offset-top
   margin-top: -150px
+  @media screen and (max-width: $screen)
+    margin-top: -100px

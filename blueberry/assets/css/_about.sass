@@ -1,13 +1,18 @@
 .about
+  $screen: 1680px
   width: 100%
   height: auto
   margin-top: 150px
+  @media screen and (max-width: $screen )
+    margin-top: 0
   //background-image: url("../img/second-background.svg")
   //background-repeat: no-repeat
   &_img
     margin-top: 200px
     width: 100%
     height: auto
+    @media screen and (max-width: $screen )
+      margin-top: 150px
   &_illustration
     position: absolute
     left: -5%
@@ -28,6 +33,9 @@
     font-family: Proba
     font-size: 80px
     font-weight: 200
+    @media screen and (max-width: $screen )
+      font-size: 50px
+      line-height: 63px
   &_ilu_2
     position: relative
     display: flex
@@ -67,8 +75,11 @@
       font-family: Proba
       font-size: 32px
       color: black
+      font-weight: 400
       text-align: center
       line-height: 100px
+      @media screen and (max-width: $screen)
+        font-size: 24px
     &_text
       display: block
       width: 70%
@@ -79,4 +90,7 @@
       padding-top: 40px
       line-height: 30px
       color: black
+      @media screen and (max-width: $screen)
+        font-size: 16px
+        line-height: 20px
 
