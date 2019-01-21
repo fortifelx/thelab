@@ -1,5 +1,7 @@
 .footer
   $footer_height: 110px
+  @media screen and (max-width: $screen)
+    $footer_height: 100px
   width: 100%
   height: $footer_height
   &_logo
@@ -36,3 +38,6 @@
   font-size: 20px
   line-height: 25px
   font-weight: 400
+  @media screen and (max-width: $screen)
+    font-size: 14px
+    line-height: 20px

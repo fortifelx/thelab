@@ -414,6 +414,9 @@
     font-size: 80px;
     font-weight: 200;
     padding-bottom: 50px; }
+    @media screen and (max-width: 1680px) {
+      .valuers_header {
+        font-size: 50px; } }
   .valuers_block {
     width: 100%;
     position: relative;
@@ -423,6 +426,10 @@
     border: 10px;
     box-shadow: 0 15px 30px rgba(0, 180, 221, 0.19);
     background-color: white; }
+    @media screen and (max-width: 1680px) {
+      .valuers_block {
+        min-height: 250px;
+        padding: 25px 10px 25px 12px; } }
     .valuers_block_text {
       width: 100%;
       font-family: Proba;
@@ -430,6 +437,10 @@
       font-weight: 400;
       line-height: 32px;
       color: black; }
+      @media screen and (max-width: 1680px) {
+        .valuers_block_text {
+          font-size: 16px;
+          line-height: 20px; } }
     .valuers_block_header {
       width: 100%;
       font-family: Proba;
@@ -441,6 +452,9 @@
       position: absolute;
       bottom: 60px;
       left: 0; }
+      @media screen and (max-width: 1680px) {
+        .valuers_block_header {
+          font-size: 30px; } }
   .valuers_tr:nth-child(2) .valuers_block {
     height: 45vh;
     min-height: 430px;
@@ -448,6 +462,9 @@
     background-size: 45%;
     background-repeat: no-repeat;
     background-position: -5% 109%; }
+    @media screen and (max-width: 1680px) {
+      .valuers_tr:nth-child(2) .valuers_block {
+        min-height: 300px; } }
   .valuers_tr:nth-child(3) .valuers_block {
     height: 40vh;
     min-height: 430px;
@@ -455,6 +472,9 @@
     background-size: 58%;
     background-repeat: no-repeat;
     background-position: 112% 112%; }
+    @media screen and (max-width: 1680px) {
+      .valuers_tr:nth-child(3) .valuers_block {
+        min-height: 300px; } }
 
 .clients {
   width: 100%;
@@ -489,12 +509,21 @@
       height: 16vh;
       bottom: -10%;
       margin-left: 35px; }
+      @media screen and (max-width: 1680px) {
+        .clients_logo:nth-child(2) {
+          margin-left: 20px; } }
     .clients_logo:nth-child(3) {
       top: -10%;
       margin-right: 50px; }
+      @media screen and (max-width: 1680px) {
+        .clients_logo:nth-child(3) {
+          margin-right: 20px; } }
     .clients_logo:nth-child(4) {
       margin-top: 20px;
       margin-right: 55px; }
+      @media screen and (max-width: 1680px) {
+        .clients_logo:nth-child(4) {
+          margin-right: 25px; } }
     .clients_logo:nth-child(5) {
       top: -5%; }
   .clients_text {
@@ -508,12 +537,19 @@
       font-size: 80px;
       line-height: 100px;
       font-weight: 200; }
+      @media screen and (max-width: 1680px) {
+        .clients_text_header {
+          font-size: 50px; } }
     .clients_text_content {
       margin-top: 30px;
       font-family: Proba;
       font-size: 24px;
       line-height: 32px;
       color: black; }
+      @media screen and (max-width: 1680px) {
+        .clients_text_content {
+          font-size: 16px;
+          line-height: 18px; } }
 
 .contacts {
   width: 100%;
@@ -554,29 +590,40 @@
       position: absolute;
       top: 0;
       left: 0; }
+      @media screen and (max-width: 1680px) {
+        .contacts_data_content {
+          padding: 20px 40px; } }
     .contacts_data_header {
       font-size: 32px;
       font-family: Proba;
       font-weight: 600;
       line-height: 32px;
       color: black; }
+      @media screen and (max-width: 1680px) {
+        .contacts_data_header {
+          font-size: 24px; } }
     .contacts_data_text {
-      width: 50%;
+      width: 60%;
       margin-top: 20px;
       font-size: 24px;
       font-family: Proba;
       font-weight: 200;
       line-height: 32px;
       color: black; }
+      @media screen and (max-width: 1680px) {
+        .contacts_data_text {
+          font-size: 16px;
+          line-height: 18px;
+          margin-top: 10px; } }
       .contacts_data_text b {
         font-weight: 600; }
 
 .footer {
   width: 100%;
-  height: 110px; }
+  height: 100px; }
   .footer_logo {
     width: 100%;
-    height: 110px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -585,7 +632,7 @@
       width: 100%; }
   .footer_ico {
     width: 100%;
-    height: 110px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center; }
@@ -610,6 +657,10 @@
   font-size: 20px;
   line-height: 25px;
   font-weight: 400; }
+  @media screen and (max-width: 1680px) {
+    .copyright {
+      font-size: 14px;
+      line-height: 20px; } }
 
 a {
   text-decoration: none; }
