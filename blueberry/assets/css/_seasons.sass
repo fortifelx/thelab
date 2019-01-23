@@ -12,6 +12,10 @@
   @media screen and (max-width: $screen)
     padding-top: 150px
     background-position: 70vw 0, -6vw 50px
+  @media screen and (max-width: $tablet)
+    padding-bottom: 100px
+    padding-top: 100px
+    background-position: 70vw 0, -3vw 100px
   &_header
     color: rgba(0, 180, 221, 1)
     display: block
@@ -22,6 +26,9 @@
     @media screen and (max-width: $screen)
       font-size: 50px
       line-height: 63px
+    @media screen and (max-width: $tablet)
+      font-size: 35px
+      line-height: 44px
   &_wrapper
     width: 100%
     display: block
@@ -31,6 +38,8 @@
     display: flex
     justify-content: space-between
     padding-top: 55vh
+    @media screen and (max-width: $tablet)
+      padding-top: 230px
     li
       position: relative
       color: #575757
@@ -41,6 +50,8 @@
       flex: 1 3 auto
       @media screen and (max-width: $screen)
         font-size: 15px
+      @media screen and (max-width: $tablet)
+        font-size: 11px
       &:nth-child(1)
         .seasons_line
           width: calc(415% - 9px)
@@ -48,6 +59,9 @@
           @media screen and (max-width: $screen)
             width: calc(415% - 2px)
             top: -45vh
+          @media screen and (max-width: $tablet)
+            top: -200px
+            width: calc(415% - 3px)
       &:nth-child(2)
         .seasons_line
           width: calc(515% - 6px)
@@ -55,12 +69,19 @@
           @media screen and (max-width: $screen)
             width: calc(515% - 0px)
             top: -35vh
+          @media screen and (max-width: $tablet)
+            top: -160px
+            width: calc(510% + 1px)
       &:nth-child(3)
         .seasons_line
           width: calc(500% + 13px)
           top: -24vh
           @media screen and (max-width: $screen)
             top: -25vh
+          @media screen and (max-width: $tablet)
+            top: - 120px
+            left: calc(51% + 1px)
+            width: calc(500% + 7px)
       &:nth-child(8)
         .seasons_line
           width: calc(515% + 12px)
@@ -69,13 +90,18 @@
           @media screen and (max-width: $screen)
             left: calc(55% - 8px)
             top: -15vh
-
+          @media screen and (max-width: $tablet)
+            top: -80px
+            left: calc(51% + 3px)
+            width: calc(515% + 7px)
   &_line
     position: absolute
     color: rgba(0, 180, 221, 1)
     font-size: 18px
     font-weight: 600
     left: calc(55% - 10px)
+    @media screen and (max-width: $tablet)
+      left: calc(51% + 2px)
     p
       position: relative
       display: inline-block
@@ -87,6 +113,10 @@
       @media screen and (max-width: $screen)
         font-size: 16px
         padding-left: 5px
+      @media screen and (max-width: $tablet)
+        font-size: 14px
+        padding-left: 2px
+        margin-left: 2px
 
       &:before
         content: ''
@@ -99,6 +129,9 @@
         background-color: rgba(129, 232, 255, 1)
         @media screen and (max-width: $screen)
           top: 46px
+        @media screen and (max-width: $tablet)
+          top: 24px
+          height: 200px
     &:before
       content: ''
       display: block
@@ -112,6 +145,9 @@
       z-index: 1
       @media screen and (max-width: $screen)
         bottom: -22px
+      @media screen and (max-width: $tablet)
+        height: 5px
+        bottom: -5px
     &:after
       content: ''
       display: block
@@ -123,6 +159,9 @@
       background-color: rgba(129, 232, 255, 1)
       @media screen and (max-width: $screen)
         top: 46px
+      @media screen and (max-width: $tablet)
+        top: 26px
+        right: 2px
   //&_lines
   //  display: block
   //  height: 50vh

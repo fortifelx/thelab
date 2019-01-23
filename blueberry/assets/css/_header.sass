@@ -1,6 +1,7 @@
 .nav
   $height: 80px
   $screen: 1680px
+  $tablet: 991.98px
   position: fixed
   width: 100%
   height: $height
@@ -8,6 +9,8 @@
   top: 30px
   left: 0
   z-index: 100
+  @media screen and (max-width: $tablet)
+    $height: 30px
   nav
     display: block
     width: 100%
@@ -35,6 +38,8 @@
       mix-blend-mode: difference
       @media screen and (max-width: $screen)
         font-size: 18px
+      @media screen and (max-width: $tablet)
+        font-size: 14px
   &_lang
     position: relative
     width: 100%
@@ -54,6 +59,8 @@
     font-weight: 200
     @media screen and (max-width: $screen)
       width: 150%
+    @media screen and (max-width: $tablet)
+      width: 100%
     &:after
       content: ''
       width: 50vw
@@ -69,7 +76,11 @@
       font-weight: 200
       @media screen and (max-width: $screen)
         font-size: 16px
+      @media screen and (max-width: $tablet)
+        font-size: 14px
       &_active
         font-size: 28px
         @media screen and (max-width: $screen)
           font-size: 24px
+        @media screen and (max-width: $tablet)
+          font-size: 18px

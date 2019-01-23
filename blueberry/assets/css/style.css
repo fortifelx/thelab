@@ -39,16 +39,16 @@
   .nav nav {
     display: block;
     width: 100%;
-    height: 80px; }
+    height: 30px; }
   .nav_logo {
     display: block;
     width: 100%;
-    height: 80px; }
+    height: 30px; }
     .nav_logo img {
       height: 100%; }
   .nav_menu {
     width: 100%;
-    height: 80px;
+    height: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,12 +64,15 @@
       @media screen and (max-width: 1680px) {
         .nav_menu_link {
           font-size: 18px; } }
+      @media screen and (max-width: 991.98px) {
+        .nav_menu_link {
+          font-size: 14px; } }
   .nav_lang {
     position: relative;
     width: 100%;
     right: 0;
     padding: 0 10px;
-    height: 80px;
+    height: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -84,6 +87,9 @@
     @media screen and (max-width: 1680px) {
       .nav_lang {
         width: 150%; } }
+    @media screen and (max-width: 991.98px) {
+      .nav_lang {
+        width: 100%; } }
     .nav_lang:after {
       content: "";
       width: 50vw;
@@ -100,16 +106,25 @@
       @media screen and (max-width: 1680px) {
         .nav_lang_link {
           font-size: 16px; } }
+      @media screen and (max-width: 991.98px) {
+        .nav_lang_link {
+          font-size: 14px; } }
       .nav_lang_link_active {
         font-size: 28px; }
         @media screen and (max-width: 1680px) {
           .nav_lang_link_active {
             font-size: 24px; } }
+        @media screen and (max-width: 991.98px) {
+          .nav_lang_link_active {
+            font-size: 18px; } }
 
 .main {
   width: 100%;
   height: 100vh;
   position: relative; }
+  @media screen and (max-width: 1680px) {
+    .main {
+      height: 510px; } }
   .main_illustration {
     display: flex;
     flex-direction: row;
@@ -118,12 +133,19 @@
     width: 100%;
     height: 100vh;
     position: relative; }
+    @media screen and (max-width: 991.98px) {
+      .main_illustration {
+        max-height: 510px; } }
     .main_illustration_first {
       position: absolute;
       height: 110%;
       top: -10%;
       right: 0;
       width: 60vw; }
+      @media screen and (max-width: 991.98px) {
+        .main_illustration_first {
+          max-height: 510px;
+          top: -5%; } }
     .main_illustration_second {
       display: block;
       margin: 0 auto;
@@ -131,6 +153,9 @@
       position: relative;
       z-index: 2;
       left: -15%; }
+      @media screen and (max-width: 991.98px) {
+        .main_illustration_second {
+          width: 75%; } }
   .main_text {
     width: 100%;
     height: 100vh;
@@ -138,6 +163,9 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 10vh 0; }
+    @media screen and (max-width: 991.98px) {
+      .main_text {
+        max-height: 510px; } }
     .main_text_header {
       width: 99%;
       font-family: Proba;
@@ -149,6 +177,10 @@
         .main_text_header {
           font-size: 49px;
           line-height: 62px; } }
+      @media screen and (max-width: 991.98px) {
+        .main_text_header {
+          font-size: 27px;
+          line-height: 34px; } }
     .main_text_btn {
       height: 70px;
       line-height: 65px;
@@ -164,6 +196,11 @@
       @media screen and (max-width: 1680px) {
         .main_text_btn {
           font-size: 18px; } }
+      @media screen and (max-width: 991.98px) {
+        .main_text_btn {
+          font-size: 16px;
+          height: 30px;
+          line-height: 28px; } }
   .main_ilu {
     position: absolute;
     width: 30%;
@@ -190,20 +227,32 @@
     @media screen and (max-width: 1680px) {
       .about_img {
         margin-top: 150px; } }
+    @media screen and (max-width: 991.98px) {
+      .about_img {
+        margin-top: 75px; } }
   .about_illustration {
     position: absolute;
     left: -5%;
     top: 150px;
     width: 100%; }
+    @media screen and (max-width: 991.98px) {
+      .about_illustration {
+        top: 35px; } }
     .about_illustration img {
       width: 80%;
       opacity: 0.21; }
+      @media screen and (max-width: 991.98px) {
+        .about_illustration img {
+          width: 85%; } }
   .about_wrapper {
     display: flex;
     width: 100%;
     height: 100%;
     flex-direction: column;
     justify-content: center; }
+    @media screen and (max-width: 991.98px) {
+      .about_wrapper {
+        padding-bottom: 20%; } }
   .about_header {
     color: #00b4dd;
     display: block;
@@ -214,6 +263,10 @@
       .about_header {
         font-size: 50px;
         line-height: 63px; } }
+    @media screen and (max-width: 991.98px) {
+      .about_header {
+        font-size: 40px;
+        line-height: 50px; } }
   .about_ilu_2 {
     position: relative;
     display: flex;
@@ -230,11 +283,14 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-color: #f9fcff;
+    background-color: white;
     border-radius: 400px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.07);
     overflow: hidden;
     position: relative; }
+    @media screen and (max-width: 991.98px) {
+      .about_block {
+        border-radius: 100px; } }
     .about_block:before {
       content: "";
       display: block;
@@ -273,6 +329,11 @@
         .about_block_text {
           font-size: 16px;
           line-height: 20px; } }
+      @media screen and (max-width: 991.98px) {
+        .about_block_text {
+          line-height: 18px;
+          width: 100%;
+          padding: 10px 50px 35px 53px; } }
 
 .seasons {
   width: 100%;
@@ -289,6 +350,11 @@
     .seasons {
       padding-top: 150px;
       background-position: 70vw 0, -6vw 50px; } }
+  @media screen and (max-width: 991.98px) {
+    .seasons {
+      padding-bottom: 100px;
+      padding-top: 100px;
+      background-position: 70vw 0, -3vw 100px; } }
   .seasons_header {
     color: #00b4dd;
     display: block;
@@ -300,6 +366,10 @@
       .seasons_header {
         font-size: 50px;
         line-height: 63px; } }
+    @media screen and (max-width: 991.98px) {
+      .seasons_header {
+        font-size: 35px;
+        line-height: 44px; } }
   .seasons_wrapper {
     width: 100%;
     display: block;
@@ -309,6 +379,9 @@
     display: flex;
     justify-content: space-between;
     padding-top: 55vh; }
+    @media screen and (max-width: 991.98px) {
+      .seasons_weeks {
+        padding-top: 230px; } }
     .seasons_weeks li {
       position: relative;
       color: #575757;
@@ -320,6 +393,9 @@
       @media screen and (max-width: 1680px) {
         .seasons_weeks li {
           font-size: 15px; } }
+      @media screen and (max-width: 991.98px) {
+        .seasons_weeks li {
+          font-size: 11px; } }
       .seasons_weeks li:nth-child(1) .seasons_line {
         width: calc(415% - 9px);
         top: -48vh; }
@@ -327,6 +403,10 @@
           .seasons_weeks li:nth-child(1) .seasons_line {
             width: calc(415% - 2px);
             top: -45vh; } }
+        @media screen and (max-width: 991.98px) {
+          .seasons_weeks li:nth-child(1) .seasons_line {
+            top: -200px;
+            width: calc(415% - 3px); } }
       .seasons_weeks li:nth-child(2) .seasons_line {
         width: calc(515% - 6px);
         top: -36vh; }
@@ -334,12 +414,21 @@
           .seasons_weeks li:nth-child(2) .seasons_line {
             width: calc(515% - 0px);
             top: -35vh; } }
+        @media screen and (max-width: 991.98px) {
+          .seasons_weeks li:nth-child(2) .seasons_line {
+            top: -160px;
+            width: calc(510% + 1px); } }
       .seasons_weeks li:nth-child(3) .seasons_line {
         width: calc(500% + 13px);
         top: -24vh; }
         @media screen and (max-width: 1680px) {
           .seasons_weeks li:nth-child(3) .seasons_line {
             top: -25vh; } }
+        @media screen and (max-width: 991.98px) {
+          .seasons_weeks li:nth-child(3) .seasons_line {
+            top: -120px;
+            left: calc(51% + 1px);
+            width: calc(500% + 7px); } }
       .seasons_weeks li:nth-child(8) .seasons_line {
         width: calc(515% + 12px);
         top: -12vh;
@@ -348,12 +437,20 @@
           .seasons_weeks li:nth-child(8) .seasons_line {
             left: calc(55% - 8px);
             top: -15vh; } }
+        @media screen and (max-width: 991.98px) {
+          .seasons_weeks li:nth-child(8) .seasons_line {
+            top: -80px;
+            left: calc(51% + 3px);
+            width: calc(515% + 7px); } }
   .seasons_line {
     position: absolute;
     color: #00b4dd;
     font-size: 18px;
     font-weight: 600;
     left: calc(55% - 10px); }
+    @media screen and (max-width: 991.98px) {
+      .seasons_line {
+        left: calc(51% + 2px); } }
     .seasons_line p {
       position: relative;
       display: inline-block;
@@ -366,6 +463,11 @@
         .seasons_line p {
           font-size: 16px;
           padding-left: 5px; } }
+      @media screen and (max-width: 991.98px) {
+        .seasons_line p {
+          font-size: 14px;
+          padding-left: 2px;
+          margin-left: 2px; } }
       .seasons_line p:before {
         content: "";
         display: block;
@@ -378,6 +480,10 @@
         @media screen and (max-width: 1680px) {
           .seasons_line p:before {
             top: 46px; } }
+        @media screen and (max-width: 991.98px) {
+          .seasons_line p:before {
+            top: 24px;
+            height: 200px; } }
     .seasons_line:before {
       content: "";
       display: block;
@@ -392,6 +498,10 @@
       @media screen and (max-width: 1680px) {
         .seasons_line:before {
           bottom: -22px; } }
+      @media screen and (max-width: 991.98px) {
+        .seasons_line:before {
+          height: 5px;
+          bottom: -5px; } }
     .seasons_line:after {
       content: "";
       display: block;
@@ -404,6 +514,10 @@
       @media screen and (max-width: 1680px) {
         .seasons_line:after {
           top: 46px; } }
+      @media screen and (max-width: 991.98px) {
+        .seasons_line:after {
+          top: 26px;
+          right: 2px; } }
 
 .valuers {
   width: 100%;
@@ -415,6 +529,9 @@
     .valuers {
       padding-bottom: 150px;
       padding-top: 100px; } }
+  @media screen and (max-width: 991.98px) {
+    .valuers {
+      padding-top: 50px; } }
   .valuers_header {
     color: #00b4dd;
     display: block;
@@ -425,6 +542,11 @@
     @media screen and (max-width: 1680px) {
       .valuers_header {
         font-size: 50px; } }
+    @media screen and (max-width: 991.98px) {
+      .valuers_header {
+        font-size: 35px;
+        line-height: 44px;
+        padding-bottom: 30px; } }
   .valuers_block {
     width: 100%;
     position: relative;
@@ -433,11 +555,18 @@
     padding: 30px 25px 30px 25px;
     border: 10px;
     box-shadow: 0 15px 30px rgba(0, 180, 221, 0.19);
-    background-color: white; }
+    background-color: white;
+    border-radius: 10px; }
     @media screen and (max-width: 1680px) {
       .valuers_block {
         min-height: 250px;
         padding: 25px 10px 25px 12px; } }
+    @media screen and (max-width: 991.98px) {
+      .valuers_block {
+        max-height: 200px;
+        min-height: 150px;
+        height: auto;
+        padding: 10px 20px; } }
     .valuers_block_text {
       width: 100%;
       font-family: Proba;
@@ -463,6 +592,12 @@
       @media screen and (max-width: 1680px) {
         .valuers_block_header {
           font-size: 30px; } }
+      @media screen and (max-width: 991.98px) {
+        .valuers_block_header {
+          font-size: 24px;
+          bottom: 0;
+          text-align: left;
+          padding-left: 20px; } }
   .valuers_tr:nth-child(2) .valuers_block {
     height: 45vh;
     min-height: 430px;
@@ -473,6 +608,12 @@
     @media screen and (max-width: 1680px) {
       .valuers_tr:nth-child(2) .valuers_block {
         min-height: 300px; } }
+    @media screen and (max-width: 991.98px) {
+      .valuers_tr:nth-child(2) .valuers_block {
+        min-height: 200px;
+        height: auto;
+        background-position: 106% 111%;
+        background-size: 35%; } }
   .valuers_tr:nth-child(3) .valuers_block {
     height: 40vh;
     min-height: 430px;
@@ -483,6 +624,12 @@
     @media screen and (max-width: 1680px) {
       .valuers_tr:nth-child(3) .valuers_block {
         min-height: 300px; } }
+    @media screen and (max-width: 991.98px) {
+      .valuers_tr:nth-child(3) .valuers_block {
+        min-height: 200px;
+        height: auto;
+        background-position: 105% 111%;
+        background-size: 35%; } }
 
 .clients {
   width: 100%;
@@ -694,6 +841,15 @@ a {
       background-repeat: no-repeat;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
       padding-bottom: 100px; } }
+  @media screen and (max-width: 991.98px) {
+    .main_wrapper {
+      background-image: url("../img/main_background.svg"), url("../img/main_ilu.png"), linear-gradient(to bottom, #009BD1 70vw, rgba(255, 255, 255, 0) 0%), url("../img/second-background.svg");
+      background-size: 122vw, 13vw, 50vw, 0;
+      background-position: -6vw -15vw, 78vw 52vw, 50vw 15vw, -6vw -30vh;
+      background-repeat: no-repeat;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+      padding-bottom: 100px;
+      background-color: #F9FCFF; } }
 
 .margin-bottom {
   margin-bottom: 50px; }
@@ -703,5 +859,8 @@ a {
   @media screen and (max-width: 1680px) {
     .margin-offset-top {
       margin-top: -100px; } }
+  @media screen and (max-width: 991.98px) {
+    .margin-offset-top {
+      margin-top: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

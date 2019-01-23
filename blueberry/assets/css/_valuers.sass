@@ -7,6 +7,8 @@
   @media screen and (max-width: $screen)
     padding-bottom: 150px
     padding-top: 100px
+  @media screen and (max-width: $tablet)
+    padding-top: 50px
   &_header
     color: rgba(0, 180, 221, 1)
     display: block
@@ -16,6 +18,10 @@
     padding-bottom: 50px
     @media screen and (max-width: $screen)
       font-size: 50px
+    @media screen and (max-width: $tablet)
+      font-size: 35px
+      line-height: 44px
+      padding-bottom: 30px
   &_block
     width: 100%
     position: relative
@@ -25,9 +31,15 @@
     border: 10px
     box-shadow: 0 15px 30px rgba(0, 180, 221, 0.19)
     background-color: white
+    border-radius: 10px
     @media screen and (max-width: $screen)
       min-height: 250px
       padding: 25px 10px 25px 12px
+    @media screen and (max-width: $tablet)
+      max-height: 200px
+      min-height: 150px
+      height: auto
+      padding: 10px 20px
     &_text
       width: 100%
       font-family: Proba
@@ -51,6 +63,11 @@
       left: 0
       @media screen and (max-width: $screen)
         font-size: 30px
+      @media screen and (max-width: $tablet)
+        font-size: 24px
+        bottom: 0
+        text-align: left
+        padding-left: 20px
   &_tr
     &:nth-child(2)
       .valuers_block
@@ -62,6 +79,11 @@
         background-position: -5% 109%
         @media screen and (max-width: $screen)
           min-height: 300px
+        @media screen and (max-width: $tablet)
+          min-height: 200px
+          height: auto
+          background-position: 106% 111%
+          background-size: 35%
     &:nth-child(3)
       .valuers_block
         height: 40vh
@@ -72,3 +94,8 @@
         background-position: 112% 112%
         @media screen and (max-width: $screen)
           min-height: 300px
+        @media screen and (max-width: $tablet)
+          min-height: 200px
+          height: auto
+          background-position: 105% 111%
+          background-size: 35%

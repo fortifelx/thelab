@@ -3,6 +3,8 @@
   width: 100%
   height: 100vh
   position: relative
+  @media screen and (max-width: $screen )
+    height: 510px
   &_illustration
     display: flex
     flex-direction: row
@@ -11,12 +13,17 @@
     width: 100%
     height: 100vh
     position: relative
+    @media screen and (max-width: $tablet)
+      max-height: 510px
     &_first
       position: absolute
       height: 110%
       top: -10%
       right: 0
       width: 60vw
+      @media screen and (max-width: $tablet)
+        max-height: 510px
+        top: -5%
     &_second
       display: block
       margin: 0 auto
@@ -24,6 +31,8 @@
       position: relative
       z-index: 2
       left: -15%
+      @media screen and (max-width: $tablet)
+        width: 75%
   &_text
     width: 100%
     height: 100vh
@@ -31,6 +40,8 @@
     flex-direction: column
     justify-content: space-around
     padding: 10vh 0
+    @media screen and (max-width: $tablet)
+      max-height: 510px
     &_header
       width: 99%
       font-family: Proba
@@ -41,6 +52,9 @@
       @media screen and (max-width: $screen )
         font-size: 49px
         line-height: 62px
+      @media screen and (max-width: $tablet)
+        font-size: 27px
+        line-height: 34px
     &_btn
       height: 70px
       line-height: 65px
@@ -55,6 +69,10 @@
       font-weight: 200
       @media screen and (max-width: $screen )
         font-size: 18px
+      @media screen and (max-width: $tablet)
+        font-size: 16px
+        height: 30px
+        line-height: 28px
   &_ilu
     position: absolute
     width: 30%
