@@ -16,6 +16,10 @@
     padding-bottom: 100px
     padding-top: 100px
     background-position: 70vw 0, -3vw 100px
+  @media screen and (max-width: $mobile)
+    padding-top: 50px
+    background-size: 70vw, 122vw
+    background-position: 50vw 50%, -3vw 30px
   &_header
     color: rgba(0, 180, 221, 1)
     display: block
@@ -29,6 +33,8 @@
     @media screen and (max-width: $tablet)
       font-size: 35px
       line-height: 44px
+    @media screen and (max-width: $mobile)
+      font-size: 30px
   &_wrapper
     width: 100%
     display: block
@@ -52,6 +58,15 @@
         font-size: 15px
       @media screen and (max-width: $tablet)
         font-size: 11px
+      @media screen and (max-width: $mobile)
+        width: 12px
+      .seasons_rotate
+        display: inline-block
+        width: 250%
+        transform: rotate(270deg)
+        position: relative
+        top: -250%
+        left: - 13px
       &:nth-child(1)
         .seasons_line
           width: calc(415% - 9px)
@@ -62,6 +77,8 @@
           @media screen and (max-width: $tablet)
             top: -200px
             width: calc(415% - 3px)
+          @media screen and (max-width: $mobile)
+            width: calc(415% + 2px)
       &:nth-child(2)
         .seasons_line
           width: calc(515% - 6px)
@@ -72,6 +89,8 @@
           @media screen and (max-width: $tablet)
             top: -160px
             width: calc(510% + 1px)
+          @media screen and (max-width: $mobile)
+            width: calc(510% + 3px)
       &:nth-child(3)
         .seasons_line
           width: calc(500% + 13px)
@@ -82,6 +101,9 @@
             top: - 120px
             left: calc(51% + 1px)
             width: calc(500% + 7px)
+          @media screen and (max-width: $mobile)
+            width: calc(500% + 6px)
+            left: calc(50% - 2px)
       &:nth-child(8)
         .seasons_line
           width: calc(515% + 12px)
@@ -94,6 +116,9 @@
             top: -80px
             left: calc(51% + 3px)
             width: calc(515% + 7px)
+          @media screen and (max-width: $mobile)
+            left: calc(50% - 2px)
+            width: calc(515% + 1px)
   &_line
     position: absolute
     color: rgba(0, 180, 221, 1)
@@ -102,6 +127,8 @@
     left: calc(55% - 10px)
     @media screen and (max-width: $tablet)
       left: calc(51% + 2px)
+    @media screen and (max-width: $mobile)
+      left: calc(50% - 2px)
     p
       position: relative
       display: inline-block

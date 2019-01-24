@@ -15,6 +15,8 @@
       margin-top: 150px
     @media screen and (max-width: $tablet )
       margin-top: 75px
+    @media screen and (max-width: $mobile )
+      margin-top: 0
   &_illustration
     position: absolute
     left: -5%
@@ -22,11 +24,15 @@
     width: 100%
     @media screen and (max-width: $tablet )
       top: 35px
+    @media screen and (max-width: $mobile )
+      text-align: right
     img
       width: 80%
       opacity: 0.21
       @media screen and (max-width: $tablet )
         width: 85%
+      @media screen and (max-width: $mobile )
+        width: 45%
   &_wrapper
     display: flex
     width: 100%
@@ -35,6 +41,8 @@
     justify-content: center
     @media screen and (max-width: $tablet )
       padding-bottom: 20%
+    @media screen and (max-width: $mobile )
+      padding-bottom: 0
   &_header
     color: rgba(0, 180, 221, 1)
     display: block
@@ -47,6 +55,11 @@
     @media screen and (max-width: $tablet )
       font-size: 40px
       line-height: 50px
+    @media screen and (max-width: $mobile )
+      font-size: 30px
+      line-height: 40px
+      text-align: center
+      margin-top: 70px
   &_ilu_2
     position: relative
     display: flex
@@ -71,6 +84,8 @@
     position: relative
     @media screen and (max-width: $tablet )
       border-radius: 100px
+    @media screen and (max-width: $mobile )
+      border-radius: 50px
     &:before
       content: ''
       display: block
@@ -82,6 +97,22 @@
       bottom: calc(100% - 100px)
       background-color: rgba(249, 252, 255, 1)
       box-shadow: 0px 5px 20px  rgba(0, 0, 0, 0.07)
+      @media screen and (max-width: $mobile )
+        left: -25%
+        width: 150%
+        bottom: calc(100% - 55px)
+    &_mobile
+      .about_block_header
+        padding: 0 25%
+        line-height: 24px
+        height: 100px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+      .about_block
+        &:before
+          bottom: calc(100% - 100px)
     &_header
       position: relative
       z-index: 1
@@ -94,6 +125,10 @@
       line-height: 100px
       @media screen and (max-width: $screen)
         font-size: 24px
+      @media screen and (max-width: $mobile )
+        font-size: 20px
+        line-height: 55px
+        height: 55px
     &_text
       display: block
       width: 70%
@@ -111,4 +146,5 @@
         line-height: 18px
         width: 100%
         padding: 10px 50px 35px 53px
-
+      @media screen and (max-width: $mobile )
+        padding: 10px 15px 35px 15px

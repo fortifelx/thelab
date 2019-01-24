@@ -297,6 +297,9 @@
     @media screen and (max-width: 991.98px) {
       .about_img {
         margin-top: 75px; } }
+    @media screen and (max-width: 768px) {
+      .about_img {
+        margin-top: 0; } }
   .about_illustration {
     position: absolute;
     left: -5%;
@@ -305,12 +308,18 @@
     @media screen and (max-width: 991.98px) {
       .about_illustration {
         top: 35px; } }
+    @media screen and (max-width: 768px) {
+      .about_illustration {
+        text-align: right; } }
     .about_illustration img {
       width: 80%;
       opacity: 0.21; }
       @media screen and (max-width: 991.98px) {
         .about_illustration img {
           width: 85%; } }
+      @media screen and (max-width: 768px) {
+        .about_illustration img {
+          width: 45%; } }
   .about_wrapper {
     display: flex;
     width: 100%;
@@ -320,6 +329,9 @@
     @media screen and (max-width: 991.98px) {
       .about_wrapper {
         padding-bottom: 20%; } }
+    @media screen and (max-width: 768px) {
+      .about_wrapper {
+        padding-bottom: 0; } }
   .about_header {
     color: #00b4dd;
     display: block;
@@ -334,6 +346,12 @@
       .about_header {
         font-size: 40px;
         line-height: 50px; } }
+    @media screen and (max-width: 768px) {
+      .about_header {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 70px; } }
   .about_ilu_2 {
     position: relative;
     display: flex;
@@ -358,6 +376,9 @@
     @media screen and (max-width: 991.98px) {
       .about_block {
         border-radius: 100px; } }
+    @media screen and (max-width: 768px) {
+      .about_block {
+        border-radius: 50px; } }
     .about_block:before {
       content: "";
       display: block;
@@ -369,6 +390,21 @@
       bottom: calc(100% - 100px);
       background-color: #f9fcff;
       box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.07); }
+      @media screen and (max-width: 768px) {
+        .about_block:before {
+          left: -25%;
+          width: 150%;
+          bottom: calc(100% - 55px); } }
+    .about_block_mobile .about_block_header {
+      padding: 0 25%;
+      line-height: 24px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+    .about_block_mobile .about_block:before {
+      bottom: calc(100% - 100px); }
     .about_block_header {
       position: relative;
       z-index: 1;
@@ -382,6 +418,11 @@
       @media screen and (max-width: 1680px) {
         .about_block_header {
           font-size: 24px; } }
+      @media screen and (max-width: 768px) {
+        .about_block_header {
+          font-size: 20px;
+          line-height: 55px;
+          height: 55px; } }
     .about_block_text {
       display: block;
       width: 70%;
@@ -401,6 +442,9 @@
           line-height: 18px;
           width: 100%;
           padding: 10px 50px 35px 53px; } }
+      @media screen and (max-width: 768px) {
+        .about_block_text {
+          padding: 10px 15px 35px 15px; } }
 
 .seasons {
   width: 100%;
@@ -422,6 +466,11 @@
       padding-bottom: 100px;
       padding-top: 100px;
       background-position: 70vw 0, -3vw 100px; } }
+  @media screen and (max-width: 768px) {
+    .seasons {
+      padding-top: 50px;
+      background-size: 70vw, 122vw;
+      background-position: 50vw 50%, -3vw 30px; } }
   .seasons_header {
     color: #00b4dd;
     display: block;
@@ -437,6 +486,9 @@
       .seasons_header {
         font-size: 35px;
         line-height: 44px; } }
+    @media screen and (max-width: 768px) {
+      .seasons_header {
+        font-size: 30px; } }
   .seasons_wrapper {
     width: 100%;
     display: block;
@@ -463,6 +515,16 @@
       @media screen and (max-width: 991.98px) {
         .seasons_weeks li {
           font-size: 11px; } }
+      @media screen and (max-width: 768px) {
+        .seasons_weeks li {
+          width: 12px; } }
+      .seasons_weeks li .seasons_rotate {
+        display: inline-block;
+        width: 250%;
+        transform: rotate(270deg);
+        position: relative;
+        top: -250%;
+        left: -13px; }
       .seasons_weeks li:nth-child(1) .seasons_line {
         width: calc(415% - 9px);
         top: -48vh; }
@@ -474,6 +536,9 @@
           .seasons_weeks li:nth-child(1) .seasons_line {
             top: -200px;
             width: calc(415% - 3px); } }
+        @media screen and (max-width: 768px) {
+          .seasons_weeks li:nth-child(1) .seasons_line {
+            width: calc(415% + 2px); } }
       .seasons_weeks li:nth-child(2) .seasons_line {
         width: calc(515% - 6px);
         top: -36vh; }
@@ -485,6 +550,9 @@
           .seasons_weeks li:nth-child(2) .seasons_line {
             top: -160px;
             width: calc(510% + 1px); } }
+        @media screen and (max-width: 768px) {
+          .seasons_weeks li:nth-child(2) .seasons_line {
+            width: calc(510% + 3px); } }
       .seasons_weeks li:nth-child(3) .seasons_line {
         width: calc(500% + 13px);
         top: -24vh; }
@@ -496,6 +564,10 @@
             top: -120px;
             left: calc(51% + 1px);
             width: calc(500% + 7px); } }
+        @media screen and (max-width: 768px) {
+          .seasons_weeks li:nth-child(3) .seasons_line {
+            width: calc(500% + 6px);
+            left: calc(50% - 2px); } }
       .seasons_weeks li:nth-child(8) .seasons_line {
         width: calc(515% + 12px);
         top: -12vh;
@@ -509,6 +581,10 @@
             top: -80px;
             left: calc(51% + 3px);
             width: calc(515% + 7px); } }
+        @media screen and (max-width: 768px) {
+          .seasons_weeks li:nth-child(8) .seasons_line {
+            left: calc(50% - 2px);
+            width: calc(515% + 1px); } }
   .seasons_line {
     position: absolute;
     color: #00b4dd;
@@ -518,6 +594,9 @@
     @media screen and (max-width: 991.98px) {
       .seasons_line {
         left: calc(51% + 2px); } }
+    @media screen and (max-width: 768px) {
+      .seasons_line {
+        left: calc(50% - 2px); } }
     .seasons_line p {
       position: relative;
       display: inline-block;

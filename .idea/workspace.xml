@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9d529cc5-a7e0-427c-bd58-21c61fd0988a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/blueberry/assets/css/_header.sass" afterPath="$PROJECT_DIR$/blueberry/assets/css/_header.sass" />
-      <change beforePath="$PROJECT_DIR$/blueberry/assets/css/_main.sass" afterPath="$PROJECT_DIR$/blueberry/assets/css/_main.sass" />
+      <change beforePath="$PROJECT_DIR$/blueberry/assets/css/_about.sass" afterPath="$PROJECT_DIR$/blueberry/assets/css/_about.sass" />
+      <change beforePath="$PROJECT_DIR$/blueberry/assets/css/_seasons.sass" afterPath="$PROJECT_DIR$/blueberry/assets/css/_seasons.sass" />
       <change beforePath="$PROJECT_DIR$/blueberry/assets/css/style.css" afterPath="$PROJECT_DIR$/blueberry/assets/css/style.css" />
       <change beforePath="$PROJECT_DIR$/blueberry/assets/css/style.css.map" afterPath="$PROJECT_DIR$/blueberry/assets/css/style.css.map" />
-      <change beforePath="$PROJECT_DIR$/blueberry/assets/css/style.sass" afterPath="$PROJECT_DIR$/blueberry/assets/css/style.sass" />
       <change beforePath="$PROJECT_DIR$/blueberry/index.html" afterPath="$PROJECT_DIR$/blueberry/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blueberry/assets/css/style.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="638">
@@ -59,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_seasons.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_seasons.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_seasons.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="410">
+              <caret line="104" column="32" lean-forward="false" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -72,8 +71,8 @@
       <file leaf-file-name="_about.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_about.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+            <state relative-caret-position="454">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,8 +111,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blueberry/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+            <state relative-caret-position="616">
+              <caret line="172" column="61" lean-forward="false" selection-start-line="172" selection-start-column="61" selection-end-line="172" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -139,16 +138,16 @@
         <option value="$PROJECT_DIR$/blueberry/assets/script.js" />
         <option value="$PROJECT_DIR$/blueberry/assets/js/script.js" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/_font.sass" />
-        <option value="$PROJECT_DIR$/blueberry/assets/css/_about.sass" />
-        <option value="$PROJECT_DIR$/blueberry/assets/css/_seasons.sass" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/_valuers.sass" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/_clients.sass" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/_contacts.sass" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/_footer.sass" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/_header.sass" />
-        <option value="$PROJECT_DIR$/blueberry/index.html" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/_main.sass" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/style.sass" />
+        <option value="$PROJECT_DIR$/blueberry/assets/css/_about.sass" />
+        <option value="$PROJECT_DIR$/blueberry/index.html" />
+        <option value="$PROJECT_DIR$/blueberry/assets/css/_seasons.sass" />
       </list>
     </option>
   </component>
@@ -264,12 +263,12 @@
       <workItem from="1548142410784" duration="21000" />
       <workItem from="1548234784515" duration="8441000" />
       <workItem from="1548317582052" duration="7135000" />
-      <workItem from="1548333273985" duration="2930000" />
+      <workItem from="1548333273985" duration="6842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57609000" />
+    <option name="totallyTimeSpent" value="61521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -637,22 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_about.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_seasons.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_valuers.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -693,14 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blueberry/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_main.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -713,6 +688,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="45" column="53" lean-forward="false" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_about.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blueberry/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="172" column="61" lean-forward="false" selection-start-line="172" selection-start-column="61" selection-end-line="172" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_seasons.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="104" column="32" lean-forward="false" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
           <folding />
         </state>
       </provider>
