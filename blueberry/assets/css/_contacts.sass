@@ -9,6 +9,8 @@
     img
       width: auto
       height: 90vh
+      @media screen and (max-width: $tablet)
+        height: 500px
   &_data
     width: 100%
     height: 100%
@@ -38,6 +40,8 @@
       left: 0
       @media screen and (max-width: $screen)
         padding: 20px 40px
+      @media screen and (max-width: $tablet)
+        padding: 20px
     &_header
       font-size: 32px
       font-family: Proba
@@ -46,6 +50,8 @@
       color: black
       @media screen and (max-width: $screen)
         font-size: 24px
+      @media screen and (max-width: $tablet)
+        font-size: 20px
     &_text
       width: 60%
       margin-top: 20px
@@ -60,3 +66,7 @@
         margin-top: 10px
       b
         font-weight: 600
+      @media screen and (max-width: $tablet)
+        font-size: 14px
+        line-height: 18px
+        margin-top: 5px

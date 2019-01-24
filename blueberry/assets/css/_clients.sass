@@ -9,6 +9,8 @@
     height: 100%
     position: relative
     padding-right: 40px
+    @media screen and (max-width: $tablet)
+      padding-right: 0
   &_logo
     position: relative
     background-color: #F9FCFF
@@ -21,6 +23,9 @@
     justify-content: center
     align-items: center
     margin: 7px
+    @media screen and (max-width: $tablet)
+      width: 9vw
+      height: 9vw
     img
       width: 75%
       display: inline-block
@@ -28,29 +33,45 @@
       width: 23vh
       height: 23vh
       margin-left: 20%
+      @media screen and (max-width: $tablet)
+        width: 12vw
+        height: 12vw
+        margin-left: 27%
     &:nth-child(2)
-      width: 16vh
+      width: 7vh
       height: 16vh
       bottom: -10%
       margin-left: 35px
       @media screen and (max-width: $screen)
         margin-left: 20px
+      @media screen and (max-width: $tablet)
+        width: 9vw
+        height: 9vw
+        margin-left: 0px
     &:nth-child(3)
       top: -10%
       margin-right: 50px
       @media screen and (max-width: $screen)
         margin-right: 20px
+      @media screen and (max-width: $tablet)
+        margin-right: 10px
+        top: -20%
     &:nth-child(4)
       margin-top: 20px
       margin-right: 55px
       @media screen and (max-width: $screen)
         margin-right: 25px
+      @media screen and (max-width: $tablet)
+        margin-right: 12px
+        margin-top: 0
     &:nth-child(5)
       top: -5%
   &_text
     width: 100%
     height: auto
     padding-top: 10vh
+    @media screen and (max-width: $tablet)
+      padding-top: 30px
     &_header
       color: rgba(0, 180, 221, 1)
       display: block
@@ -60,6 +81,9 @@
       font-weight: 200
       @media screen and (max-width: $screen)
         font-size: 50px
+      @media screen and (max-width: $tablet)
+        font-size: 35px
+        line-height: 44px
     &_content
       margin-top: 30px
       font-family: Proba

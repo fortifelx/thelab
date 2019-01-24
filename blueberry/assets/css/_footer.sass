@@ -2,6 +2,8 @@
   $footer_height: 110px
   @media screen and (max-width: $screen)
     $footer_height: 100px
+  @media screen and (max-width: $tablet)
+    $footer_height: 70px
   width: 100%
   height: $footer_height
   &_logo
@@ -22,10 +24,14 @@
   &_facebook
     height: 50%
     width: auto
+    @media screen and (max-width: $tablet)
+      height: 30%
   &_foregroup
     height: 80%
     width: auto
     margin-left: 30px
+    @media screen and (max-width: $tablet)
+      height: 55%
 .copyright_wrapper
   width: 100%
   height: 110px
@@ -41,3 +47,5 @@
   @media screen and (max-width: $screen)
     font-size: 14px
     line-height: 20px
+  @media screen and (max-width: $tablet)
+    font-size: 10px

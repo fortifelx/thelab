@@ -643,6 +643,9 @@
     height: 100%;
     position: relative;
     padding-right: 40px; }
+    @media screen and (max-width: 991.98px) {
+      .clients_logos {
+        padding-right: 0; } }
   .clients_logo {
     position: relative;
     background-color: #F9FCFF;
@@ -655,6 +658,10 @@
     justify-content: center;
     align-items: center;
     margin: 7px; }
+    @media screen and (max-width: 991.98px) {
+      .clients_logo {
+        width: 9vw;
+        height: 9vw; } }
     .clients_logo img {
       width: 75%;
       display: inline-block; }
@@ -662,32 +669,53 @@
       width: 23vh;
       height: 23vh;
       margin-left: 20%; }
+      @media screen and (max-width: 991.98px) {
+        .clients_logo:nth-child(1) {
+          width: 12vw;
+          height: 12vw;
+          margin-left: 27%; } }
     .clients_logo:nth-child(2) {
-      width: 16vh;
+      width: 7vh;
       height: 16vh;
       bottom: -10%;
       margin-left: 35px; }
       @media screen and (max-width: 1680px) {
         .clients_logo:nth-child(2) {
           margin-left: 20px; } }
+      @media screen and (max-width: 991.98px) {
+        .clients_logo:nth-child(2) {
+          width: 9vw;
+          height: 9vw;
+          margin-left: 0px; } }
     .clients_logo:nth-child(3) {
       top: -10%;
       margin-right: 50px; }
       @media screen and (max-width: 1680px) {
         .clients_logo:nth-child(3) {
           margin-right: 20px; } }
+      @media screen and (max-width: 991.98px) {
+        .clients_logo:nth-child(3) {
+          margin-right: 10px;
+          top: -20%; } }
     .clients_logo:nth-child(4) {
       margin-top: 20px;
       margin-right: 55px; }
       @media screen and (max-width: 1680px) {
         .clients_logo:nth-child(4) {
           margin-right: 25px; } }
+      @media screen and (max-width: 991.98px) {
+        .clients_logo:nth-child(4) {
+          margin-right: 12px;
+          margin-top: 0; } }
     .clients_logo:nth-child(5) {
       top: -5%; }
   .clients_text {
     width: 100%;
     height: auto;
     padding-top: 10vh; }
+    @media screen and (max-width: 991.98px) {
+      .clients_text {
+        padding-top: 30px; } }
     .clients_text_header {
       color: #00b4dd;
       display: block;
@@ -698,6 +726,10 @@
       @media screen and (max-width: 1680px) {
         .clients_text_header {
           font-size: 50px; } }
+      @media screen and (max-width: 991.98px) {
+        .clients_text_header {
+          font-size: 35px;
+          line-height: 44px; } }
     .clients_text_content {
       margin-top: 30px;
       font-family: Proba;
@@ -720,6 +752,9 @@
     .contacts_map img {
       width: auto;
       height: 90vh; }
+      @media screen and (max-width: 991.98px) {
+        .contacts_map img {
+          height: 500px; } }
   .contacts_data {
     width: 100%;
     height: 100%;
@@ -750,6 +785,9 @@
       @media screen and (max-width: 1680px) {
         .contacts_data_content {
           padding: 20px 40px; } }
+      @media screen and (max-width: 991.98px) {
+        .contacts_data_content {
+          padding: 20px; } }
     .contacts_data_header {
       font-size: 32px;
       font-family: Proba;
@@ -759,6 +797,9 @@
       @media screen and (max-width: 1680px) {
         .contacts_data_header {
           font-size: 24px; } }
+      @media screen and (max-width: 991.98px) {
+        .contacts_data_header {
+          font-size: 20px; } }
     .contacts_data_text {
       width: 60%;
       margin-top: 20px;
@@ -774,13 +815,18 @@
           margin-top: 10px; } }
       .contacts_data_text b {
         font-weight: 600; }
+      @media screen and (max-width: 991.98px) {
+        .contacts_data_text {
+          font-size: 14px;
+          line-height: 18px;
+          margin-top: 5px; } }
 
 .footer {
   width: 100%;
-  height: 100px; }
+  height: 70px; }
   .footer_logo {
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -789,17 +835,23 @@
       width: 100%; }
   .footer_ico {
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center; }
   .footer_facebook {
     height: 50%;
     width: auto; }
+    @media screen and (max-width: 991.98px) {
+      .footer_facebook {
+        height: 30%; } }
   .footer_foregroup {
     height: 80%;
     width: auto;
     margin-left: 30px; }
+    @media screen and (max-width: 991.98px) {
+      .footer_foregroup {
+        height: 55%; } }
 
 .copyright_wrapper {
   width: 100%;
@@ -818,6 +870,9 @@
     .copyright {
       font-size: 14px;
       line-height: 20px; } }
+  @media screen and (max-width: 991.98px) {
+    .copyright {
+      font-size: 10px; } }
 
 a {
   text-decoration: none; }
