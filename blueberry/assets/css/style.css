@@ -470,7 +470,8 @@
     .seasons {
       padding-top: 50px;
       background-size: 70vw, 122vw;
-      background-position: 50vw 50%, -3vw 30px; } }
+      background-position: 50vw 50%, -3vw 30px;
+      padding-bottom: 25px; } }
   .seasons_header {
     color: #00b4dd;
     display: block;
@@ -693,6 +694,9 @@
         font-size: 35px;
         line-height: 44px;
         padding-bottom: 30px; } }
+    @media screen and (max-width: 768px) {
+      .valuers_header {
+        text-align: center; } }
   .valuers_block {
     width: 100%;
     position: relative;
