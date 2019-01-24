@@ -1,5 +1,8 @@
+
 $screen: 1680px
 $tablet: 991.98px
+$mobile: 768px
+
 @import "font"
 @import "header"
 @import "main"
@@ -37,6 +40,15 @@ a
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07)
     padding-bottom: 100px
     background-color: #F9FCFF
+  @media screen and (max-width: $mobile)
+    background-image: url("../img/main_background.svg"),  url("../img/main_ilu.png"), linear-gradient(to bottom, #009BD1 70vw, rgba(255,255,255,0) 0%), url("../img/second-background.svg")
+    background-size: 122vw, 13vw, 50vw, 0
+    background-position: -6vw 30vh, 78vw 68vh, 50vw 48vh, -6vw -30vh
+    background-repeat: no-repeat
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07)
+    padding-bottom: 100px
+    background-color: #F9FCFF
+
 .margin-bottom
   margin-bottom: 50px
 .margin-offset-top

@@ -36,14 +36,40 @@
   top: 30px;
   left: 0;
   z-index: 100; }
+  @media screen and (max-width: 768px) {
+    .nav {
+      top: 15px; } }
   .nav nav {
     display: block;
     width: 100%;
     height: 30px; }
+    @media screen and (max-width: 768px) {
+      .nav nav {
+        overflow: hidden;
+        width: 22px;
+        height: 20px;
+        margin-top: 5px;
+        position: relative; }
+        .nav nav:before {
+          content: "";
+          display: block;
+          box-sizing: border-box;
+          height: 100%;
+          border-top: 2px solid #00B4DD;
+          border-bottom: 2px solid #00B4DD;
+          width: 100%; }
+        .nav nav:after {
+          content: "";
+          position: absolute;
+          top: 9px;
+          height: 2px;
+          width: 100%;
+          background-color: #00B4DD; } }
   .nav_logo {
     display: block;
     width: 100%;
-    height: 30px; }
+    height: 30px;
+    line-height: 30px; }
     .nav_logo img {
       height: 100%; }
   .nav_menu {
@@ -53,6 +79,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    @media screen and (max-width: 768px) {
+      .nav_menu {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        display: none; } }
     .nav_menu_link {
       font-family: Proba;
       font-size: 28px;
@@ -125,6 +158,15 @@
   @media screen and (max-width: 1680px) {
     .main {
       height: 510px; } }
+  @media screen and (max-width: 768px) {
+    .main:before {
+      content: "";
+      width: 100%;
+      height: 70vh;
+      position: absolute;
+      display: block;
+      top: -70px;
+      background-color: white; } }
   .main_illustration {
     display: flex;
     flex-direction: row;
@@ -136,6 +178,9 @@
     @media screen and (max-width: 991.98px) {
       .main_illustration {
         max-height: 510px; } }
+    @media screen and (max-width: 768px) {
+      .main_illustration {
+        max-height: 300px; } }
     .main_illustration_first {
       position: absolute;
       height: 110%;
@@ -146,6 +191,12 @@
         .main_illustration_first {
           max-height: 510px;
           top: -5%; } }
+      @media screen and (max-width: 768px) {
+        .main_illustration_first {
+          right: 0;
+          top: -10px;
+          height: 100%;
+          width: auto; } }
     .main_illustration_second {
       display: block;
       margin: 0 auto;
@@ -156,6 +207,10 @@
       @media screen and (max-width: 991.98px) {
         .main_illustration_second {
           width: 75%; } }
+      @media screen and (max-width: 768px) {
+        .main_illustration_second {
+          top: 0;
+          width: 65%; } }
   .main_text {
     width: 100%;
     height: 100vh;
@@ -166,6 +221,11 @@
     @media screen and (max-width: 991.98px) {
       .main_text {
         max-height: 510px; } }
+    @media screen and (max-width: 768px) {
+      .main_text {
+        height: 50vh;
+        padding-top: 0;
+        margin-top: -15vh; } }
     .main_text_header {
       width: 99%;
       font-family: Proba;
@@ -201,6 +261,13 @@
           font-size: 16px;
           height: 30px;
           line-height: 28px; } }
+      @media screen and (max-width: 768px) {
+        .main_text_btn {
+          height: 26px;
+          line-height: 25px;
+          width: 120px;
+          font-size: 12px;
+          margin: 0 auto; } }
   .main_ilu {
     position: absolute;
     width: 30%;
@@ -901,6 +968,15 @@ a {
       background-image: url("../img/main_background.svg"), url("../img/main_ilu.png"), linear-gradient(to bottom, #009BD1 70vw, rgba(255, 255, 255, 0) 0%), url("../img/second-background.svg");
       background-size: 122vw, 13vw, 50vw, 0;
       background-position: -6vw -15vw, 78vw 52vw, 50vw 15vw, -6vw -30vh;
+      background-repeat: no-repeat;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+      padding-bottom: 100px;
+      background-color: #F9FCFF; } }
+  @media screen and (max-width: 768px) {
+    .main_wrapper {
+      background-image: url("../img/main_background.svg"), url("../img/main_ilu.png"), linear-gradient(to bottom, #009BD1 70vw, rgba(255, 255, 255, 0) 0%), url("../img/second-background.svg");
+      background-size: 122vw, 13vw, 50vw, 0;
+      background-position: -6vw 30vh, 78vw 68vh, 50vw 48vh, -6vw -30vh;
       background-repeat: no-repeat;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
       padding-bottom: 100px;
