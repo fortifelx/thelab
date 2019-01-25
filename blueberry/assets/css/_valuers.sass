@@ -9,6 +9,8 @@
     padding-top: 100px
   @media screen and (max-width: $tablet)
     padding-top: 50px
+  @media screen and (max-width: $mobile)
+    padding-bottom: 50px
   &_header
     color: rgba(0, 180, 221, 1)
     display: block
@@ -42,6 +44,9 @@
       min-height: 150px
       height: auto
       padding: 10px 20px
+    @media screen and (max-width: $mobile)
+      min-height: 120px
+      margin-bottom: 50px
     &_text
       width: 100%
       font-family: Proba
@@ -86,6 +91,10 @@
           height: auto
           background-position: 106% 111%
           background-size: 35%
+        @media screen and (max-width: $mobile)
+          min-height: 150px
+          background-size: 25%
+          background-position: 102% 111%
     &:nth-child(3)
       .valuers_block
         height: 40vh
@@ -101,3 +110,7 @@
           height: auto
           background-position: 105% 111%
           background-size: 35%
+        @media screen and (max-width: $mobile)
+          min-height: 150px
+          background-size: 25%
+          background-position: 102% 111%

@@ -4,6 +4,8 @@
   padding-bottom: 200px
   @media screen and (max-width: $screen)
     padding-bottom: 150px
+  @media screen and (max-width: $mobile)
+    padding-bottom: 50px
   &_logos
     width: 100%
     height: 100%
@@ -11,6 +13,8 @@
     padding-right: 40px
     @media screen and (max-width: $tablet)
       padding-right: 0
+    @media screen and (max-width: $mobile)
+      min-height: 250px
   &_logo
     position: relative
     background-color: #F9FCFF
@@ -26,6 +30,9 @@
     @media screen and (max-width: $tablet)
       width: 9vw
       height: 9vw
+    @media screen and (max-width: $mobile)
+      width: 22vw
+      height: 22vw
     img
       width: 75%
       display: inline-block
@@ -37,6 +44,9 @@
         width: 12vw
         height: 12vw
         margin-left: 27%
+      @media screen and (max-width: $mobile)
+        width: 25vw
+        height: 25vw
     &:nth-child(2)
       width: 7vh
       height: 16vh
@@ -48,6 +58,9 @@
         width: 9vw
         height: 9vw
         margin-left: 0px
+      @media screen and (max-width: $mobile)
+        width: 23vw
+        height: 23vw
     &:nth-child(3)
       top: -10%
       margin-right: 50px
@@ -66,12 +79,16 @@
         margin-top: 0
     &:nth-child(5)
       top: -5%
+      @media screen and (max-width: $mobile)
+        top: -2%
   &_text
     width: 100%
     height: auto
     padding-top: 10vh
     @media screen and (max-width: $tablet)
       padding-top: 30px
+    @media screen and (max-width: $mobile)
+      padding-bottom: 10px
     &_header
       color: rgba(0, 180, 221, 1)
       display: block
@@ -84,6 +101,8 @@
       @media screen and (max-width: $tablet)
         font-size: 35px
         line-height: 44px
+      @media screen and (max-width: $mobile)
+        text-align: center
     &_content
       margin-top: 30px
       font-family: Proba
@@ -93,3 +112,5 @@
       @media screen and (max-width: $screen)
         font-size: 16px
         line-height: 18px
+      @media screen and (max-width: $mobile)
+        line-height: 20px

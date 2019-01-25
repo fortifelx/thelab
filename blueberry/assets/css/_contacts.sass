@@ -11,26 +11,50 @@
       height: 90vh
       @media screen and (max-width: $tablet)
         height: 500px
+      @media screen and (max-width: $mobile)
+        height: 300px
+        margin-left: -20px
+    @media screen and (max-width: $mobile)
+      padding-top: 100%
   &_data
     width: 100%
     height: 100%
     position: absolute
     top: 0
     left: 0
+    z-index: 1
     &_flex
       width: 100%
       height: 100%
       display: flex
       flex-direction: column
       justify-content: space-around
+      @media screen and (max-width: $mobile)
+        display: block
+
     &_wrapper
       position: relative
       width: 95%
       height: auto
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07)
+      @media screen and (max-width: $mobile)
+        width: 115vw
+        margin-bottom: 18px
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07)
       img
         width: 100%
         height: auto
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        height: 50%
+        top: 25%
+        left: 75%
+        width: 15%
+        border-radius: 100%
+        background-color: white
+        box-shadow: inset 0 7px 25px rgba(0, 0, 0, 0.07)
     &_content
       width: 100%
       display: block
@@ -42,6 +66,8 @@
         padding: 20px 40px
       @media screen and (max-width: $tablet)
         padding: 20px
+      @media screen and (max-width: $mobile)
+        padding: 10px 20px
     &_header
       font-size: 32px
       font-family: Proba
@@ -70,3 +96,5 @@
         font-size: 14px
         line-height: 18px
         margin-top: 5px
+      @media screen and (max-width: $mobile)
+        width: 75%
