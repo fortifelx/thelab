@@ -4,13 +4,9 @@
     <list default="true" id="9d529cc5-a7e0-427c-bd58-21c61fd0988a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/blueberry/assets/css/_about.sass" afterPath="$PROJECT_DIR$/blueberry/assets/css/_about.sass" />
-      <change beforePath="$PROJECT_DIR$/blueberry/assets/css/_contacts.sass" afterPath="$PROJECT_DIR$/blueberry/assets/css/_contacts.sass" />
-      <change beforePath="$PROJECT_DIR$/blueberry/assets/css/_header.sass" afterPath="$PROJECT_DIR$/blueberry/assets/css/_header.sass" />
       <change beforePath="$PROJECT_DIR$/blueberry/assets/css/style.css" afterPath="$PROJECT_DIR$/blueberry/assets/css/style.css" />
       <change beforePath="$PROJECT_DIR$/blueberry/assets/css/style.css.map" afterPath="$PROJECT_DIR$/blueberry/assets/css/style.css.map" />
-      <change beforePath="$PROJECT_DIR$/blueberry/assets/css/style.sass" afterPath="$PROJECT_DIR$/blueberry/assets/css/style.sass" />
       <change beforePath="$PROJECT_DIR$/blueberry/assets/js/script.js" afterPath="$PROJECT_DIR$/blueberry/assets/js/script.js" />
-      <change beforePath="$PROJECT_DIR$/blueberry/index.html" afterPath="$PROJECT_DIR$/blueberry/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,7 +40,7 @@
       <file leaf-file-name="style.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blueberry/assets/css/style.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
+            <state relative-caret-position="652">
               <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
@@ -74,8 +70,8 @@
       <file leaf-file-name="_about.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_about.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-602">
-              <caret line="86" column="33" lean-forward="false" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+            <state relative-caret-position="217">
+              <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -91,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_contacts.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_contacts.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_contacts.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
@@ -111,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blueberry/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="53" column="64" lean-forward="false" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+            <state relative-caret-position="264">
+              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -148,9 +144,9 @@
         <option value="$PROJECT_DIR$/blueberry/assets/css/_header.sass" />
         <option value="$PROJECT_DIR$/blueberry/index.html" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/style.sass" />
+        <option value="$PROJECT_DIR$/blueberry/assets/css/_contacts.sass" />
         <option value="$PROJECT_DIR$/blueberry/assets/css/_about.sass" />
         <option value="$PROJECT_DIR$/blueberry/assets/js/script.js" />
-        <option value="$PROJECT_DIR$/blueberry/assets/css/_contacts.sass" />
       </list>
     </option>
   </component>
@@ -274,12 +270,12 @@
       <workItem from="1548234784515" duration="8441000" />
       <workItem from="1548317582052" duration="7135000" />
       <workItem from="1548333273985" duration="7820000" />
-      <workItem from="1548399078843" duration="15860000" />
+      <workItem from="1548399078843" duration="16775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78359000" />
+    <option name="totallyTimeSpent" value="79274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -688,18 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/style.sass">
+    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_contacts.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_about.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-602">
-          <caret line="86" column="33" lean-forward="false" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        <state relative-caret-position="418">
+          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -712,18 +700,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blueberry/assets/js/script.js">
+    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="53" column="64" lean-forward="false" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+        <state relative-caret-position="652">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_contacts.sass">
+    <entry file="file://$PROJECT_DIR$/blueberry/assets/css/_about.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="217">
+          <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blueberry/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding />
         </state>
       </provider>

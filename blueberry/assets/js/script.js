@@ -32,7 +32,7 @@
     var contact2 = $(contacts[1]);
     var contact3 = $(contacts[2]);
     window.onscroll = function() {
-        var screenheight = document.documentElement.clientHeight*0.6;
+        var screenheight = document.documentElement.clientHeight*0.8;
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
         if( scrolled > 20) {
             nav.addClass('nav_active');
@@ -48,7 +48,7 @@
         if(scrolled > about3.offset().top - screenheight ) {
             about3.addClass('about_block_active');
         }
-        if(scrolled > about4.offset().top - screenheight ) {
+        if(scrolled > about4.offset().top - screenheight - 100 ) {
             about4.addClass('about_block_active');
         }
         if(scrolled > contact1.offset().top - screenheight - 200) {
