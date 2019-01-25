@@ -8,12 +8,16 @@
   top: 30px
   left: 0
   z-index: 100
+  background-color: transparent
+  transition: all 200ms
   @media screen and (max-width: $tablet)
     height: $tablet_height
     line-height: $tablet_height
   @media screen and (max-width: $mobile)
     top: 15px
-
+  &_active
+    top: 0
+    background-color: white
   nav
     display: block
     width: 100%
@@ -74,7 +78,6 @@
       display: inline-block
       width: auto
       color: #1D252D
-      mix-blend-mode: difference
       @media screen and (max-width: $screen)
         font-size: 18px
       @media screen and (max-width: $tablet)

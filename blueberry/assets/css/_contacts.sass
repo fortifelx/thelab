@@ -37,6 +37,10 @@
       width: 95%
       height: auto
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07)
+      transform: rotate3d(1, 0, 0, 91deg)
+      transition: transform 0.8s ease-out
+      &_active
+        transform: rotate3d(1, 0, 0, 0deg)
       @media screen and (max-width: $mobile)
         width: 115vw
         margin-bottom: 18px
