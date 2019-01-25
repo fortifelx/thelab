@@ -4,6 +4,8 @@
   padding-bottom: 200px
   @media screen and (max-width: $screen)
     padding-bottom: 150px
+  @media screen and (max-width: $tablet)
+    padding-bottom: 100px
   @media screen and (max-width: $mobile)
     padding-bottom: 50px
   &_logos
@@ -40,6 +42,9 @@
       width: 23vh
       height: 23vh
       margin-left: 20%
+      @media screen and (max-width: $screen)
+        max-width: 162px
+        max-height: 162px
       @media screen and (max-width: $tablet)
         width: 12vw
         height: 12vw
@@ -48,12 +53,14 @@
         width: 25vw
         height: 25vw
     &:nth-child(2)
-      width: 7vh
+      width: 16vh
       height: 16vh
       bottom: -10%
       margin-left: 35px
       @media screen and (max-width: $screen)
         margin-left: 20px
+        max-width: 114px
+        max-height: 114px
       @media screen and (max-width: $tablet)
         width: 9vw
         height: 9vw
@@ -66,19 +73,26 @@
       margin-right: 50px
       @media screen and (max-width: $screen)
         margin-right: 20px
+        max-width: 107px
+        max-height: 107px
       @media screen and (max-width: $tablet)
-        margin-right: 10px
+        margin-right: 0
         top: -20%
     &:nth-child(4)
       margin-top: 20px
       margin-right: 55px
       @media screen and (max-width: $screen)
         margin-right: 25px
+        max-width: 107px
+        max-height: 107px
       @media screen and (max-width: $tablet)
         margin-right: 12px
         margin-top: 0
     &:nth-child(5)
       top: -5%
+      @media screen and (max-width: $screen)
+        max-width: 107px
+        max-height: 107px
       @media screen and (max-width: $mobile)
         top: -2%
   &_text

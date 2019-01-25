@@ -1,7 +1,8 @@
 
 $screen: 1680px
-$tablet: 991.98px
-$mobile: 768px
+$tablet: 1024px
+$mobile: 767px
+$mini: 320px
 
 @import "font"
 @import "header"
@@ -34,11 +35,13 @@ a
     padding-bottom: 100px
   @media screen and (max-width: $tablet)
     background-image: url("../img/main_background.svg"),  url("../img/main_ilu.png"), linear-gradient(to bottom, #009BD1 70vw, rgba(255,255,255,0) 0%), url("../img/second-background.svg")
-    background-size: 122vw, 13vw, 50vw, 0
-    background-position: -6vw -15vw, 78vw 52vw, 50vw 15vw, -6vw -30vh
+    background-size: 122vw, 13vw, 50vw, 116vw
+    background-position: -6vw -15vw, 78vw 52vw, 50vw 15vw, -6vw 0
     background-repeat: no-repeat
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07)
     padding-bottom: 100px
+  @media screen and (max-width: 990px)
+    background-size: 122vw, 13vw, 50vw, 0
     background-color: #F9FCFF
   @media screen and (max-width: $mobile)
     background-image: url("../img/main_background.svg"),  url("../img/main_ilu.png"), linear-gradient(to bottom, #009BD1 70vw, rgba(255,255,255,0) 0%), url("../img/second-background.svg")

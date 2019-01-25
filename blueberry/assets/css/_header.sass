@@ -1,5 +1,6 @@
 .nav
   $height: 80px
+  $tablet_height: 30px
   position: fixed
   width: 100%
   height: $height
@@ -8,13 +9,17 @@
   left: 0
   z-index: 100
   @media screen and (max-width: $tablet)
-    $height: 30px
+    height: $tablet_height
+    line-height: $tablet_height
   @media screen and (max-width: $mobile)
     top: 15px
+
   nav
     display: block
     width: 100%
     height: $height
+    @media screen and (max-width: $tablet)
+      height: $tablet_height
     @media screen and (max-width: $mobile)
       overflow: hidden
       width: 22px
@@ -41,6 +46,9 @@
     width: 100%
     height: $height
     line-height: $height
+    @media screen and (max-width: $tablet)
+      height: $tablet_height
+      line-height: $tablet_height
     img
       height: 100%
   &_menu
@@ -50,6 +58,9 @@
     flex-direction: row
     justify-content: space-between
     align-items: center
+    @media screen and (max-width: $tablet)
+      height: $tablet_height
+      line-height: $tablet_height
     @media screen and (max-width: $mobile)
       position: fixed
       width: 100vw
@@ -89,6 +100,12 @@
       width: 150%
     @media screen and (max-width: $tablet)
       width: 100%
+      height: $tablet_height
+    @media screen and (max-width: $mobile)
+      width: 200%
+    @media screen and (max-width: $mini)
+      width: 280%
+
     &:after
       content: ''
       width: 50vw

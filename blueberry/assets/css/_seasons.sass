@@ -3,7 +3,7 @@
   height: 100%
   display: block
   position: relative
-  padding-bottom: 30vh
+  padding-bottom: 150px
   padding-top: 200px
   background-image: url("../img/seasons_blueberry.svg") ,url("../img/seasons_background.svg")
   background-repeat: no-repeat
@@ -61,13 +61,17 @@
         font-size: 11px
       @media screen and (max-width: $mobile)
         width: 12px
-      .seasons_rotate
-        display: inline-block
-        width: 250%
-        transform: rotate(270deg)
-        position: relative
-        top: -250%
-        left: - 13px
+        .seasons_rotate
+          display: inline-block
+          width: 250%
+          transform: rotate(270deg)
+          position: relative
+          top: -250%
+          left: - 13px
+      @media screen and (max-width: $mini)
+        .seasons_rotate
+          left: -10px
+
       &:nth-child(1)
         .seasons_line
           width: calc(415% - 9px)
