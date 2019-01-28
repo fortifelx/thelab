@@ -48,6 +48,24 @@
   .nav_active {
     top: 0;
     background-color: white; }
+  .nav_open {
+    overflow: visible !important; }
+    .nav_open:before {
+      z-index: 2;
+      height: 0px !important;
+      border-top: 1px solid #00B4DD !important;
+      border-bottom: 1px solid #00B4DD !important;
+      top: 9px !important;
+      transform: rotate(45deg);
+      transition: height 0.2s ease-in-out !important; }
+    .nav_open:after {
+      transform: rotate(-405deg); }
+    .nav_open .nav_menu {
+      display: flex;
+      opacity: 1;
+      z-index: 0;
+      right: 0;
+      transition: all 0.6s; }
   .nav nav {
     display: block;
     width: 100%;
@@ -64,24 +82,31 @@
         position: relative; }
         .nav nav:before {
           content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
           display: block;
           box-sizing: border-box;
           height: 100%;
           border-top: 2px solid #00B4DD;
           border-bottom: 2px solid #00B4DD;
-          width: 100%; }
+          width: 100%;
+          transition: transform 0.6s ease-in-out, height 0.6s ease-in-out 0.6s, border-bottom-width 0.6s, border-top-width 0.6s; }
         .nav nav:after {
           content: "";
           position: absolute;
           top: 9px;
           height: 2px;
           width: 100%;
-          background-color: #00B4DD; } }
+          background-color: #00B4DD;
+          transition: transform 0.6s ease-in-out; } }
   .nav_logo {
     display: block;
     width: 100%;
     height: 80px;
-    line-height: 80px; }
+    line-height: 80px;
+    position: relative;
+    z-index: 2; }
     @media screen and (max-width: 1024px) {
       .nav_logo {
         height: 30px;
@@ -105,7 +130,16 @@
         width: 100vw;
         height: 100vh;
         opacity: 0;
-        display: none; } }
+        display: flex;
+        top: 0;
+        right: 100vw;
+        flex-direction: column;
+        padding: 20vh 0;
+        background-color: white;
+        transition: all 0.6s; }
+        .nav_menu a {
+          color: #00B4DD;
+          font-size: 24px; } }
     .nav_menu_link {
       font-family: Proba;
       font-size: 28px;
@@ -746,7 +780,13 @@
     border: 10px;
     box-shadow: 0 15px 30px rgba(0, 180, 221, 0.19);
     background-color: white;
-    border-radius: 10px; }
+    border-radius: 10px;
+    top: 60px;
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: transform 0.5s ease-out, top 0.7s ease-in-out; }
+    .valuers_block_active {
+      transform: rotate3d(0, 1, 0, 0deg);
+      top: 0; }
     @media screen and (max-width: 1680px) {
       .valuers_block {
         min-height: 250px;
@@ -872,7 +912,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 7px; }
+    margin: 7px;
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out; }
+    .clients_logo_active {
+      transform: scale(1); }
     @media screen and (max-width: 1024px) {
       .clients_logo {
         width: 9vw;

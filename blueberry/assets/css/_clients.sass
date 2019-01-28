@@ -29,6 +29,10 @@
     justify-content: center
     align-items: center
     margin: 7px
+    transform: scale(0)
+    transition: transform 0.4s ease-in-out
+    &_active
+      transform: scale(1)
     @media screen and (max-width: $tablet)
       width: 9vw
       height: 9vw

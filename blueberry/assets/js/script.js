@@ -19,6 +19,9 @@
             scrollTop: $(targetSec).offset().top
         }, 2000, "swing");
     });
+    $('.nav nav').click(function(){
+       $(this).toggleClass('nav_open');
+    });
 })();
 (function(){
     var nav = $('.nav');
@@ -31,6 +34,24 @@
     var contact1 = $(contacts[0]);
     var contact2 = $(contacts[1]);
     var contact3 = $(contacts[2]);
+    var valuers = $('.valuers_block');
+    var valuersCount = 0;
+    var valuersStatus = false;
+    function showValuers(){
+        if(valuersCount > valuers.length) return;
+        $(valuers[valuersCount]).addClass('valuers_block_active');
+        valuersCount += 1;
+        setTimeout(showValuers, 400);
+    }
+    var logos = $('.clients_logo');
+    var logosCount = 0;
+    var logosStatus = false;
+    function showLogos(){
+        if(logosCount > logos.length) return;
+        $(logos[logosCount]).addClass('clients_logo_active');
+        logosCount += 1;
+        setTimeout(showLogos, 200);
+    }
     window.onscroll = function() {
         var screenheight = document.documentElement.clientHeight*0.8;
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -51,14 +72,26 @@
         if(scrolled > about4.offset().top - screenheight - 100 ) {
             about4.addClass('about_block_active');
         }
-        if(scrolled > contact1.offset().top - screenheight - 200) {
+        if(scrolled > contact1.offset().top - screenheight - 100) {
             contact1.addClass('contacts_data_wrapper_active');
         }
-        if(scrolled > contact2.offset().top - screenheight - 200 ) {
+        if(scrolled > contact2.offset().top - screenheight - 100 ) {
             contact2.addClass('contacts_data_wrapper_active');
         }
-        if(scrolled > contact3.offset().top - screenheight - 300 ) {
+        if(scrolled > contact3.offset().top - screenheight - 200 ) {
             contact3.addClass('contacts_data_wrapper_active');
+        }
+        if(scrolled > valuers.offset().top - screenheight) {
+            if(!valuersStatus){
+                valuersStatus = true;
+                showValuers();
+            }
+        }
+        if(scrolled > logos.offset().top - screenheight) {
+            if(!logosStatus){
+                logosStatus = true;
+                showLogos();
+            }
         }
     }
 })();
@@ -88,6 +121,7 @@
             var e = event || window.event;
             this.x = e.clientX - this._x;
             this.y = (e.clientY - this._y) * -1;
+            console.log(this.y);
         },
         setOrigin: function(e) {
             this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);

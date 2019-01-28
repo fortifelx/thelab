@@ -18,6 +18,24 @@
   &_active
     top: 0
     background-color: white
+  &_open
+    overflow: visible !important
+    &:before
+      z-index: 2
+      height: 0px !important
+      border-top: 1px solid #00B4DD !important
+      border-bottom: 1px solid #00B4DD !important
+      top: 9px !important
+      transform: rotate(45deg)
+      transition: height 0.2s ease-in-out !important
+    &:after
+      transform: rotate(-405deg)
+    .nav_menu
+      display: flex
+      opacity: 1
+      z-index: 0
+      right: 0
+      transition: all 0.6s
   nav
     display: block
     width: 100%
@@ -32,12 +50,16 @@
       position: relative
       &:before
         content: ''
+        position: absolute
+        top: 0
+        left: 0
         display: block
         box-sizing: border-box
         height: 100%
         border-top: 2px solid #00B4DD
         border-bottom: 2px solid #00B4DD
         width: 100%
+        transition: transform 0.6s ease-in-out, height 0.6s ease-in-out 0.6s, border-bottom-width 0.6s, border-top-width 0.6s
       &:after
         content: ''
         position: absolute
@@ -45,11 +67,14 @@
         height: 2px
         width: 100%
         background-color: #00B4DD
+        transition: transform 0.6s ease-in-out
   &_logo
     display: block
     width: 100%
     height: $height
     line-height: $height
+    position: relative
+    z-index: 2
     @media screen and (max-width: $tablet)
       height: $tablet_height
       line-height: $tablet_height
@@ -70,7 +95,16 @@
       width: 100vw
       height: 100vh
       opacity: 0
-      display: none
+      display: flex
+      top: 0
+      right: 100vw
+      flex-direction: column
+      padding: 20vh 0
+      background-color: white
+      transition: all 0.6s
+      a
+        color: #00B4DD
+        font-size: 24px
     &_link
       font-family: Proba
       font-size: 28px
