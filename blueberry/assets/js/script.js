@@ -20,7 +20,10 @@
         }, 2000, "swing");
     });
     $('.nav nav').click(function(){
-       $(this).toggleClass('nav_open');
+        var d_width =parseInt($('.main_wrapper' ).css('width'), 10) ;
+        if(d_width < 767){
+            $(this).toggleClass('nav_open');
+        }
     });
 })();
 (function(){
